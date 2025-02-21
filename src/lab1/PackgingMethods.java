@@ -54,20 +54,21 @@ public class PackgingMethods {
             System.out.println();
         }
     }
-    public static void printArray(double[] array){
+    public static void printArrayNonZero(double[] array){
         for(int i=0; i < array.length; i++){
             if(array[i] != 0){
                 System.out.print(array[i] + "\t");
             }
         }
     }
-    public static void printArray(int[] array){
+    public static void printArrayNonZero(int[] array){
         for(int i=0; i < array.length; i++){
             if(array[i] != 0){
                 System.out.print(array[i] + "\t");
             }
         }
     }
+
     public static int maxD(double[][] matr){
         int d = 0;
         for(int i =0; i < matr.length; i++){
@@ -95,9 +96,158 @@ public class PackgingMethods {
             }
         }
         System.out.println("Список ненулевых элементов:");
-        printArray(arrayAl);
+        printArrayNonZero(arrayAl);
         System.out.println();
         System.out.println("Список индексов K:");
-        printArray(arrayK);
+        printArrayNonZero(arrayK);
+    }
+
+    public static void adjacenciesByRowStructure(double[][] matrix){
+        int n = matrix.length;
+        double[] arrayAl = new double[n * matrix[0].length];
+        int[] arrayJ = new int[n * matrix[0].length];
+        int k = 0;
+        for (int i=0; i < n; i++){
+            arrayAl[k] = 0;
+            arrayJ[k++] = i+1;
+            for (int j = 0; j < matrix[i].length; j++){
+                if (matrix[i][j] != 0){
+                    arrayAl[k] = matrix[i][j];
+                    arrayJ[k++] = j + 1;
+                }
+            }
+        }
+        k++;
+        System.out.println("Список ненулевых элементов:");
+        for(int i=0; i < k-1; i++){
+            System.out.print(arrayAl[i] + "\t");
+        }
+        System.out.println();
+        System.out.println("Список индексов J:");
+        for(int i=0; i < k; i++){
+            System.out.print(arrayJ[i] + "\t");
+        }
+    }
+
+    public static void columnAdjacencyStructure(double[][] matrix){
+        int n = matrix.length;
+        double[] arrayAl = new double[n * matrix[0].length];
+        int[] arrayI = new int[n * matrix[0].length];
+        int k = 0;
+        for (int i=0; i < n; i++){
+            arrayAl[k] = 0;
+            arrayI[k++] = i+1;
+            for (int j = 0; j < matrix[i].length; j++){
+                if (matrix[j][i] != 0){
+                    arrayAl[k] = matrix[j][i];
+                    arrayI[k++] = j + 1;
+                }
+            }
+        }
+        k++;
+        System.out.println("Список ненулевых элементов:");
+        for(int i=0; i < k; i++){
+            System.out.print(arrayAl[i] + "\t");
+        }
+        System.out.println();
+        System.out.println("Список индексов I:");
+        for(int i=0; i < k; i++){
+            System.out.print(arrayI[i] + "\t");
+        }
+    }
+
+    public static void lowercasePackagingScheme(double[][] matrix){
+        int n = matrix.length;
+        double[] arrayAl = new double[n * matrix[0].length];
+        int[] arrayJ = new int[n * matrix[0].length];
+        int[] arrayIC = new int[n * matrix[0].length];
+        int k = 0; //индекс для массивов arrayAl и arrayJ
+        int y = 0; //индекс для массива arrayIC
+        for (int i=0; i < n; i++){
+            arrayIC[y++] = k+1;
+            for (int j = 0; j < matrix[i].length; j++){
+                if (matrix[i][j] != 0){
+                    arrayAl[k] = matrix[i][j];
+                    arrayJ[k++] = j + 1;
+//                    y+=1;
+                }
+            }
+            arrayIC[y] = k+1;
+        }
+        System.out.println("Список ненулевых элементов:");
+        for(int i=0; i < k; i++){
+            System.out.print(arrayAl[i] + "\t");
+        }
+        System.out.println();
+        System.out.println("Список индексов J:");
+        for(int i=0; i < k; i++){
+            System.out.print(arrayJ[i] + "\t");
+        }
+        System.out.println();
+        System.out.println("Список индексов IC:");
+        for(int i=0; i < k; i++){
+            if (arrayIC[i] != 0)
+                System.out.print(arrayIC[i] + "\t");
+        }
+    }
+
+    public static void columnarPackagingScheme(double[][] matrix){
+        int n = matrix.length;
+        double[] arrayAl = new double[n * matrix[0].length];
+        int[] arrayJ = new int[n * matrix[0].length];
+        int[] arrayIC = new int[n * matrix[0].length];
+        int k = 0; //индекс для массивов arrayAl и arrayJ
+        int y = 0; //индекс для массива arrayIC
+        for (int i=0; i < n; i++){
+            arrayIC[y++] = k;
+            for (int j = 0; j < matrix[i].length; j++){
+                if (matrix[j][i] != 0){
+                    arrayAl[k] = matrix[j][i];
+                    arrayJ[k++] = j + 1;
+                }
+            }
+            arrayIC[y] = k;
+        }
+        System.out.println("Список ненулевых элементов:");
+        for(int i=0; i < k; i++){
+            System.out.print(arrayAl[i] + "\t");
+        }
+        System.out.println();
+        System.out.println("Список индексов J:");
+        for(int i=0; i < k; i++){
+            System.out.print(arrayJ[i] + "\t");
+        }
+        System.out.println();
+        System.out.println("Список индексов IC:");
+        for(int i=0; i < k; i++){
+            System.out.print(arrayIC[i] + "\t");
+        }
+    }
+
+    public static void rowColumnPackingScheme(double[][] matrix){
+        int n = matrix.length;
+        double[] arrayAl = new double[n * matrix[0].length];
+        int[] arrayI = new int[n * matrix[0].length];
+        int[] arrayJ = new int[n * matrix[0].length];
+
+        int k = 0;
+        for (int i=0; i < matrix.length; i++){
+            for(int j=0; j < matrix[i].length; j++){
+                if (matrix[i][j] != 0){
+                    arrayAl[k] = matrix[i][j];
+                    arrayI[k] = i+1;
+                    arrayJ[k] = j+1;
+                    k += 1;
+                }
+            }
+        }
+        System.out.println("Список ненулевых элементов:");
+        printArrayNonZero(arrayAl);
+        System.out.println();
+        System.out.println("Список индексов I:");
+        printArrayNonZero(arrayI);
+        System.out.println();
+        System.out.println("Список индексов J:");
+        printArrayNonZero(arrayJ);
     }
 }
