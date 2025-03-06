@@ -1,8 +1,9 @@
 package lab1;
 
 import static lab1.PackgingMethods.*;
-
-public class Main {
+import static showClasses.ShowMatrix.*;
+import static laboratory2.UnpackingMethods.*;
+public class MainPacking {
 
     public static void main(String[] args) {
 
@@ -17,8 +18,9 @@ public class Main {
 //                {0, 0, 0, 0, 12, 1},
 //                {0, 5, 0, 4, 0, 0},
 //                {32, 0, 8, 0, 0, 0}};
+        //packing
         System.out.println("Исходная таблица:");
-        printMatr(matr);
+        printMatrix(matr);
         System.out.println();
         tableConnections(matr);
         System.out.println("Модифицированная строчко-столбцовая схема упаковки:");
