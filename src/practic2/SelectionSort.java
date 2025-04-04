@@ -6,46 +6,54 @@ public class SelectionSort {
 
     public static void main(String[] args) {
 
-        System.out.println("Случайный порядок");
-        int[] mass = {34, 7, 89, 12, 55, 21, 78, 3, 67, 45};
-        int[] mass1 = {42, 17, 8, 63, 29, 91, 5, 76, 34, 58, 12, 49, 23, 85, 3, 67, 10, 54, 88, 19};
-        int[] mass2 = {72, 14, 56, 9, 33, 88, 2, 47, 25, 61, 37, 19, 84, 5, 90, 11, 78, 43, 29, 66, 3, 55, 21, 99, 8, 70, 12, 41, 34, 27};
-        mass = selectionSort(mass);
-        System.out.println(Arrays.toString(mass));
-        System.out.println("Почти упорядочены");
-        int[] mass3 = {2, 5, 7, 4, 10, 12, 15, 14, 18, 20};
-        int[] mass4 = {3, 5, 7, 2, 10, 12, 15, 14, 18, 20, 22, 25, 24, 27, 30, 29, 33, 35, 38, 40};
-        int[] mass5 = {1, 2, 4, 3, 5, 6, 8, 7, 9, 10, 12, 11, 13, 15, 14, 16, 17, 19, 18, 20, 22, 21, 23, 25, 24, 26, 27, 29, 28, 30};
-        mass1 = selectionSort(mass3);
-        System.out.println(Arrays.toString(mass1));
-        System.out.println("Обратный порядок");
-        int[] mass6 = {92, 85, 77, 63, 54, 48, 39, 31, 22, 14};
-        int[] mass7 = {95, 87, 78, 74, 69, 65, 58, 54, 49, 42, 37, 33, 28, 24, 19, 15, 12, 9, 5, 2};
-        int[] mass8 = {60, 58, 56, 54, 52, 50, 48, 46, 44, 42, 40, 38, 36, 33, 31, 29, 27, 25, 23, 21, 19, 17, 15, 13, 11, 9, 7, 5, 3, 1};
-        mass2 = selectionSort(mass6);
-        System.out.println(Arrays.toString(mass2));
 
+        int[] array10_1 = {2, 7, 1, 9, 4, 6, 0, 3, 8, 5};
+        int[] array20_1 = {15, 3, 8, 12, 19, 5, 1, 10, 17, 6, 14, 0, 9, 16, 2, 11, 18, 4, 13, 7};
+        int[] array30_1 = {22, 7, 15, 29, 5, 11, 1, 20, 26, 3, 13, 9, 18, 24, 0, 10, 16, 2, 12, 28, 4, 14, 21, 27, 6, 19, 25, 8, 23, 17};
+        System.out.println("Случайный порядок");
+        System.out.println(Arrays.toString(selectionSort(array10_1)));
+        System.out.println(Arrays.toString(selectionSort(array20_1)));
+        System.out.println(Arrays.toString(selectionSort(array30_1)));
+
+        int[] array10_2 = {0, 3, 2, 1, 4, 8, 6, 7, 5, 9};
+        int[] array20_2 = {0, 2, 1, 4, 3, 6, 5, 8, 7, 9, 10, 14, 12, 11, 13, 15, 19, 17, 16, 18};
+        int[] array30_2 = {0, 1, 2, 6, 4, 3, 5, 7, 8, 9, 10, 11, 12, 16, 14, 13, 15, 17, 21, 19, 18, 20, 22, 23, 27, 25, 24, 26, 28, 29};
+        System.out.println("Почти отсортированный массив");
+        System.out.println(Arrays.toString(selectionSort(array10_2)));
+        System.out.println(Arrays.toString(selectionSort(array20_2)));
+        System.out.println(Arrays.toString(selectionSort(array30_2)));
+
+        int[] array10_3 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        int[] array20_3 = {19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        int[] array30_3 = {29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        System.out.println("Обратный порядок");
+        System.out.println(Arrays.toString(selectionSort(array10_3)));
+        System.out.println(Arrays.toString(selectionSort(array20_3)));
+        System.out.println(Arrays.toString(selectionSort(array30_3)));
     }
 
-     public static int[] selectionSort(int[] array) {
-        int x;
+    public static int[] selectionSort(int[] array){
         int countExchange = 0;
         int countComparison = 0;
-        for (int left = 0; left < array.length; left++) {
-            int indexMin = left;
-            for (int i = left; i < array.length; i++) {
+        int indexMin;
+        int x;
+        for (int j = 0; j < array.length-1; j++) {
+            indexMin = j;
+            for (int i = j; i < array.length; i++) {
                 if (array[i] < array[indexMin]) {
                     indexMin = i;
                 }
                 countComparison += 1;
             }
-            x = array[left];
-            array[left] = array[indexMin];
-            array[indexMin] = x;
-            countExchange += 2;
+            if (indexMin != j) {
+                x = array[indexMin];
+                array[indexMin] = array[j];
+                array[j] = x;
+                countExchange += 1;
+            }
         }
-        System.out.println("Count Exchanges = " + countExchange);
-        System.out.println("Count Сomparison = " + countComparison);
+        System.out.println("Количество сравнений = " + countComparison);
+        System.out.println("Количество перестановок = " + countExchange);
         return array;
-     }
+    }
 }

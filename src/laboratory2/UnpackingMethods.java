@@ -23,7 +23,7 @@ public class UnpackingMethods {
         return matrix;
     }
 
-    private static boolean sumLineZero(int[] array){
+    private static Boolean sumLineZero(int[] array){
         double sum = 0;
         for (int i=0; i < array.length; i++){
             sum += array[i];

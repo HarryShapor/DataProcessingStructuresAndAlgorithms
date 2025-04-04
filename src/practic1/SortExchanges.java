@@ -1,6 +1,5 @@
-package pr1;
+package practic1;
 
-import java.sql.Array;
 import java.util.Arrays;
 
 public class SortExchanges {
