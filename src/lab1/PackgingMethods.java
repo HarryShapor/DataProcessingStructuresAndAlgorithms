@@ -1,12 +1,14 @@
 package lab1;
 
 import java.util.Arrays;
+import static showClasses.ShowMatrix.printMatrix;
+import static showClasses.ShowArray.printArrayNonZero;
 
 public class PackgingMethods {
 
     public static void tableConnections(double[][] matr){
         int d = maxD(matr);
-        double[][] matrixTA = new double[matr.length][d];
+        int[][] matrixTA = new int[matr.length][d];
         double[][] matrixTC = new double[matr.length][d];
         for (int i=0; i < matr.length; i++){
             for (int j =0; j < d; j++){
@@ -25,15 +27,12 @@ public class PackgingMethods {
                     }
                 }
             }
-            else {
-                continue;
-            }
         }
         System.out.println("Таблица связей:");
-        printMatr(matrixTA);
+        printMatrix(matrixTA);
         System.out.println();
         System.out.println("Таблица весов:");
-        printMatr(matrixTC);
+        printMatrix(matrixTC);
     }
 
     private static int countNonZero(double[] array){
@@ -44,29 +43,6 @@ public class PackgingMethods {
             }
         }
         return count;
-    }
-
-    public static void printMatr(double[][] matr){
-        for(int i=0; i < matr.length; i++){
-            for(int j=0; j <matr[i].length; j++){
-                System.out.print(matr[i][j] +"\t" );
-            }
-            System.out.println();
-        }
-    }
-    public static void printArrayNonZero(double[] array){
-        for(int i=0; i < array.length; i++){
-            if(array[i] != 0){
-                System.out.print(array[i] + "\t");
-            }
-        }
-    }
-    public static void printArrayNonZero(int[] array){
-        for(int i=0; i < array.length; i++){
-            if(array[i] != 0){
-                System.out.print(array[i] + "\t");
-            }
-        }
     }
 
     public static int maxD(double[][] matr){
