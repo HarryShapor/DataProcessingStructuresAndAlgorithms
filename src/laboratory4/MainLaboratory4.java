@@ -4,7 +4,7 @@ public class MainLaboratory4 {
 
     public static void main(String[] args) {
 
-        UnidirectionalList<Integer> unidirectionalList = new UnidirectionalList<>(100);
+        laboratory4.UnidirectionalList<Integer> unidirectionalList = new laboratory4.UnidirectionalList<>(100);
 
         unidirectionalList.ins(50021);
         unidirectionalList.ins(500);
