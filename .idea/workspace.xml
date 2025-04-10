@@ -4,34 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2d09649-f371-4790-a336-52f70e9dd600" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/laboratory5/Main5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/laboratory5/Stack.java" afterDir="false" />
+    <list default="true" id="f2d09649-f371-4790-a336-52f70e9dd600" name="Changes" comment="implementing a stack on pointers laboratory 5">
       <change afterPath="$PROJECT_DIR$/src/laboratory5/StackOnArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuAOD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SuAOD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/laboratory2/UnpackingMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/laboratory2/UnpackingMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/laboratory3/SearchAlgorithms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/laboratory3/SearchAlgorithms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/HelloWorld$Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/MainLaboratory4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/MainLaboratory4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/UnidirectionalList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/laboratory4/UnidirectionalList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/practic2/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/practic2/SelectionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/practic2/SelectionSort_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/practic2/SelectionSort_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/practic3/SortingSimpleInserts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/practic3/SortingSimpleInserts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/practic4/ShakerSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/practic4/ShakerSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/practic5/CombSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/practic5/CombSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/practic6/DwarfSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/practic6/DwarfSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/practic7/SortingCountingComparisons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/practic7/SortingCountingComparisons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/showClasses/ShowArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/showClasses/ShowArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SuAOD/showClasses/ShowMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SuAOD/showClasses/ShowMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/laboratory4/MainLaboratory4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboratory4/MainLaboratory4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +112,19 @@
       <option name="presentableId" value="Default" />
       <updated>1744276729803</updated>
     </task>
+    <task id="LOCAL-00001" summary="implementing a stack on pointers laboratory 5">
+      <option name="closed" value="true" />
+      <created>1744283755902</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744283755902</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implementing a stack on pointers laboratory 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing a stack on pointers laboratory 5" />
   </component>
 </project>
