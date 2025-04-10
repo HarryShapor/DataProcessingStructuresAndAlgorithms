@@ -2,6 +2,8 @@ package practic7;
 
 import java.util.Arrays;
 
+import static java.util.Arrays.*;
+
 public class SortingCountingComparisons {
 
     public static void main(String[] args) {
