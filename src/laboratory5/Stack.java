@@ -1,16 +1,16 @@
 package src.laboratory5;
 
-class Node {
-    int data;
+class Node<T> {
+    T data;
     Node next;
 
-    Node(int value) {
+    Node(T value) {
         this.data = value;
         this.next = null;
     }
 }
 
-public class Stack {
+public class Stack<T> {
     private Node head;
 
     public Stack() {
@@ -21,23 +21,23 @@ public class Stack {
         this.head = null;
     }
 
-    public void push(int x) {
+    public void push(T x) {
         Node newNode = new Node(x);
         Node current = this.head;
         this.head = newNode;
         newNode.next = current;
     }
 
-    public int ret() {
+    public T ret() {
         if (this.head != null){
-            return this.head.data;
+            return (T) this.head.data;
         }
         throw new RuntimeException("Стек пуст");
     }
 
-    public int pop() {
+    public T pop() {
         if (this.head != null){
-            int nodeData = this.head.data;
+            T nodeData = (T) this.head.data;
             this.head = this.head.next;
             return nodeData;
         }

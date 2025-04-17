@@ -3,6 +3,7 @@ package src.laboratory5;
 public class StackOnArray {
 
     private int[] array;
+    public int pos = -1;
 
     public StackOnArray(){
         this.array = new int[100];
@@ -14,44 +15,42 @@ public class StackOnArray {
 
 
     public void makenull(){
-        this.head = null;
+        this.pos = -1;
     }
 
     public void push(int x) {
-        Node newNode = new Node(x);
-        Node current = this.head;
-        this.head = newNode;
-        newNode.next = current;
+        if (this.pos < this.array.length){
+            this.array[++pos] = x;
+        }
+        else {
+            throw new RuntimeException("Стек переполнен!");
+        }
     }
 
     public int ret() {
-        if (this.head != null){
-            return this.head.data;
+        if (this.pos != 0){
+            return this.array[pos];
         }
         throw new RuntimeException("Стек пуст");
     }
 
     public int pop() {
-        if (this.head != null){
-            int nodeData = this.head.data;
-            this.head = this.head.next;
-            return nodeData;
+        if (this.pos != 0){
+            return this.array[pos--];
         }
         throw new RuntimeException("Стек пуст");
     }
 
     public boolean empty() {
-        return true ? this. == null : false;
+        return true ? this.pos == -1 : false;
     }
 
 
     @Override
     public String toString(){
-        Node current = this.head;
         String s = "";
-        while (current != null) {
-            s += current.data + " -> ";
-            current = current.next;
+        for (int i=this.pos; i >= 0; i--){
+            s += this.array[i] + " -> ";
         }
         s += "null";
         return s;

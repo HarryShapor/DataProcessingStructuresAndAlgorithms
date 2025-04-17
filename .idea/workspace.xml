@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d09649-f371-4790-a336-52f70e9dd600" name="Changes" comment="implementing a stack on pointers laboratory 5">
-      <change afterPath="$PROJECT_DIR$/src/laboratory5/StackOnArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laboratory5/Main5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboratory5/Main5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laboratory5/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboratory5/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laboratory5/StackOnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboratory5/StackOnArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,21 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "HarryShapor"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HarryShapor&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/HarryShapor/DataProcessingStructuresAndAlgorithms.git",
-    "accountId": "447d1236-d464-47cb-8fb6-13c070653d5b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HarryShapor/DataProcessingStructuresAndAlgorithms.git&quot;,
+    &quot;accountId&quot;: &quot;66b02410-0da4-45ea-992c-46142e533256&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2vX1iCAq3Nikoe1P4rupCnSCHrP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,16 +48,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main5.executor": "Run",
-    "Application.MainLaboratory4.executor": "Run",
-    "Application.SortingCountingComparisons.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainLaboratory4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortingCountingComparisons.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main5">
     <configuration name="Main5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.laboratory5.Main5" />
